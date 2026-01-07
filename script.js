@@ -108,3 +108,4 @@ function stopCheats() {
 
   document.body.style.backgroundImage = "";
 }
+

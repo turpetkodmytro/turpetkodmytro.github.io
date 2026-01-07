@@ -27,11 +27,9 @@ body {
     background: #ddd;
     border-radius: 12px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
+    object-fit: cover;
 }
+
 
 .sidebar h1 {
     margin: 10px 0 0;
@@ -111,4 +109,52 @@ body {
     padding: 6px 12px;
     border-radius: 20px;
     margin: 5px 5px 0 0;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .cheat-video {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 420px;
+  }
+  .sidebar {
+    width: 260px;
+  }
+
+  .content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .photo {
+    height: 220px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+    .cheat-video {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    width: 90vw;
+    max-height: 60vh;
+  }
 }
